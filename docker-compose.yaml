@@ -1,7 +1,12 @@
 version: "3"
 
 services:
-  vim:
-    build: . 
+  python3:
+
+    build: 
+      context: .
+      ## uncomment to use the local Dockerfile.build
+      # dockerfile: Dockerfile.build
+      dockerfile: Dockerfile
     tty: true
 
